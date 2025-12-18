@@ -1,0 +1,38 @@
+<h2>Product CRUD Table</h2>
+
+<form [formGroup]="productForm">
+  <input type="text" placeholder="Product Name" formControlName="name">
+  <input type="number" placeholder="Price" formControlName="price">
+  <input type="text" placeholder="Category" formControlName="category">
+
+  <button type="button" *ngIf="!editMode" (click)="addProduct()">Add</button>
+  <button type="button" *ngIf="editMode" (click)="updateProduct()">Update</button>
+  <button type="button" *ngIf="editMode" (click)="cancelEdit()">Cancel</button>
+</form>
+
+<p *ngIf="productForm.invalid" class="error">
+  All fields are required and price must be greater than 0.
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Category</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.name }}</td>
+      <td>{{ product.price }}</td>
+      <td>{{ product.category }}</td>
+      <td>
+        <button (click)="editProduct(product)">Edit</button>
+        <button (click)="deleteProduct(product.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
