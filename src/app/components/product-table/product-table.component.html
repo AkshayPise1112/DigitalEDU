@@ -36,3 +36,16 @@
     </tr>
   </tbody>
 </table>
+
+<hr>
+
+<h2>Product Price Bar Chart</h2>
+
+<ngx-charts-bar-vertical
+  [results]="chartData"
+  [xAxis]="true"
+  [yAxis]="true"
+  [legend]="false"
+  [xAxisLabel]="'Product'"
+  [yAxisLabel]="'Price'">
+</ngx-charts-bar-vertical>

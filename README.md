@@ -57,3 +57,58 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+# Angular CRUD Table with Bar Chart
+
+## 📌 Project Overview
+This project is a simple Angular application that demonstrates **CRUD (Create, Read, Update, Delete)** operations using a table.  
+The application also includes an **optional bar chart visualization** that dynamically updates based on the table data.
+
+The project is built using **Angular standalone components** and **Reactive Forms**.
+
+---
+
+## 🎯 Features
+- Create, Read, Update, and Delete products
+- Reactive form with validation
+- Tabular display of product data
+- Dynamic bar chart visualization using ngx-charts
+- Real-time synchronization between table and chart
+- Clean and modular code structure
+
+---
+
+## 🧱 Product Fields
+- Product Name
+- Price
+- Category
+
+---
+
+## 🛠️ Technologies Used
+- Angular (Standalone Components)
+- TypeScript
+- Reactive Forms
+- ngx-charts (for bar chart visualization)
+- Angular CDK
+- HTML & CSS
+
+---
+
+## 📊 Bar Chart Functionality
+- Displays product prices as a bar chart
+- X-axis: Product Name
+- Y-axis: Product Price
+- Chart updates automatically when:
+  - A product is added
+  - A product is updated
+  - A product is deleted
+
+---
+
+## ▶️ How to Run the Project
+
+### 1️⃣ Install dependencies
+```bash
+npm install --legacy-peer-deps

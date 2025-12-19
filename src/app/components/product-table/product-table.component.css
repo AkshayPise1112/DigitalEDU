@@ -9,14 +9,15 @@ th, td {
   padding: 8px;
 }
 
-input {
-  margin: 5px;
-}
-
-button {
+input, button {
   margin: 5px;
 }
 
 .error {
   color: red;
+}
+
+ngx-charts-bar-vertical {
+  display: block;
+  height: 300px;
 }
